@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>♻️ Jogo da Coleta Seletiva</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>♻️ Jogo da Coleta Seletiva</h1>
+    <p>Arraste os resíduos para a lixeira correta e ajude o planeta!</p>
+</header>
+
+<main>
+
+<div class="placar">
+    <h2>Pontuação: <span id="pontos">0</span></h2>
+</div>
+
+<div class="itens">
+
+    <div class="item" draggable="true" id="papel">
+        📄 Papel
+    </div>
+
+    <div class="item" draggable="true" id="plastico">
+        🧴 Plástico
+    </div>
+
+    <div class="item" draggable="true" id="vidro">
+        🍾 Vidro
+    </div>
+
+    <div class="item" draggable="true" id="metal">
+        🥫 Metal
+    </div>
+
+</div>
+
+<div class="lixeiras">
+
+    <div class="lixeira azul" data-tipo="papel">
+        🟦 Papel
+    </div>
+
+    <div class="lixeira vermelha" data-tipo="plastico">
+        🟥 Plástico
+    </div>
+
+    <div class="lixeira verde" data-tipo="vidro">
+        🟩 Vidro
+    </div>
+
+    <div class="lixeira amarela" data-tipo="metal">
+        🟨 Metal
+    </div>
+
+</div>
+
+<div id="mensagem"></div>
+
+</main>
+
+<footer>
+    Projeto Agrinho 2026
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
